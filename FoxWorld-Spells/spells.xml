@@ -1,0 +1,959 @@
+<?xml version="1.0"?>
+<spells>
+
+	<!-- 
+	Tabela de exhaustion
+		Attack Runes
+			exhaustion= 1100
+		Support Runes
+			exhaustion= 1000
+		Attack Spells
+			exhaustion= 1100
+		Attack Spam Spells
+			exhaustion= 1400
+		Support Spells
+			exhaustion= 800
+		Mana Rune
+			exhaustion = 800
+		Paralyze Spells
+			exhaustion = 1200
+		Paralyze Rune
+			exhaustion = 1600
+		Others Spells
+			exhaustion = 1000
+	-->
+
+	<instant name="death_bomb" words="death_bomb" enabled="0" script="monsters/demon overlord/death_bomb.lua"></instant>
+	<instant name="blazing_wave" words="blazing_wave" direction="1" enabled="0" script="monsters/blazing spirit/blazing_wave.lua"></instant>
+	<instant name="blazing_explosion" words="blazing_explosion" selftarget="1" enabled="0" script="monsters/blazing spirit/blazing_explosion.lua"></instant>
+	
+	<!-- Attack Runes -->
+	<rune name="Poison Field" id="2285" allowfaruse="1" charges="100" lvl="14" maglv="0" exhaustion="1100" blocktype="solid" script="poison field.lua"/>
+	<rune name="Poison Bomb" id="2286" allowfaruse="1" charges="100" lvl="25" maglv="4" exhaustion="1100" blocktype="solid" script="poison bomb.lua"/>
+	<rune name="Poison Wall" id="2289" allowfaruse="1" charges="100" lvl="29" maglv="5" exhaustion="1100" blocktype="solid" script="poison wall.lua"/>
+	<rune name="Fire Field" id="2301" allowfaruse="1" charges="100" lvl="15" maglv="1" exhaustion="1100" blocktype="solid" script="fire field.lua"/>
+	<rune name="Firebomb" id="2305" allowfaruse="1" charges="100" lvl="27" maglv="5" exhaustion="1100" blocktype="solid" script="fire bomb.lua"/>
+	<rune name="Fire Wall" id="2303" allowfaruse="1" charges="100" lvl="33" maglv="6" exhaustion="1100" blocktype="solid" script="fire wall.lua"/>
+	<rune name="Soulfire" id="2308" allowfaruse="1" charges="100" lvl="27" maglv="7" exhaustion="1100" needtarget="1" blocktype="solid" script="soul fire.lua"/>
+	<rune name="Fireball" id="2302" allowfaruse="1" charges="100" lvl="27" maglv="4" exhaustion="1100" needtarget="0" blocktype="solid" script="fireball.lua"/>
+	<rune name="Great Fireball" id="2304" allowfaruse="1" charges="100" lvl="30" maglv="4" exhaustion="1100" blocktype="solid" script="great fireball.lua"/>
+	<rune name="Energy Field" id="2277" allowfaruse="1" charges="100" lvl="18" maglv="3" exhaustion="1100" blocktype="solid" script="energy field.lua"/>
+	<rune name="Energybomb" id="2262" allowfaruse="1" charges="100" lvl="37" maglv="10" exhaustion="1100" blocktype="solid" script="energy bomb.lua"/>
+	<rune name="Energy Wall" id="2279" allowfaruse="1" charges="100" lvl="41" maglv="9" exhaustion="1100" blocktype="solid" script="energy wall.lua"/>
+	<rune name="Light Magic Missile" id="2287" allowfaruse="1" charges="100" lvl="15" exhaustion="1100" maglv="0" needtarget="1" blocktype="solid" script="light magic missile.lua"/>
+	<rune name="Heavy Magic Missile" id="2311" allowfaruse="1" charges="100" lvl="25" exhaustion="1100" maglv="3" needtarget="1" blocktype="solid" script="heavy magic missile.lua"/>
+	<rune name="Explosion" id="2313" allowfaruse="1" charges="100" lvl="31" maglv="6" exhaustion="1100" blocktype="solid" script="explosion.lua"/>
+	<rune name="Sudden Death" id="2268" allowfaruse="1" charges="100" lvl="45" maglv="15" exhaustion="1100" needtarget="1" blocktype="solid" script="sudden death.lua">
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+	</rune>
+	<rune name="Icicle" id="2271" allowfaruse="1" charges="100" lvl="28" maglv="4" exhaustion="1100" needtarget="1" script="icicle.lua"/>
+	<rune name="Avalanche" id="2274" allowfaruse="1" charges="100" lvl="30" maglv="4" exhaustion="1100" script="avalanche.lua"/>
+	<rune name="Stone Shower" id="2288" allowfaruse="1" charges="100" lvl="28" maglv="4" exhaustion="1100" script="stone shower.lua"/>
+	<rune name="Thunderstorm" id="2315" allowfaruse="1" charges="100" lvl="28" maglv="4" exhaustion="1100" script="thunderstorm.lua"/>
+	<rune name="Stalagmite" id="2292" allowfaruse="1" charges="100" lvl="24" maglv="3" exhaustion="1100" needtarget="1" script="stalagmite.lua"/>
+	<rune name="Convince Creature" id="2290" allowfaruse="1" charges="100" lvl="16" maglv="5" exhaustion="1100" needtarget="1" blocktype="solid" function="convince"/>
+	<rune name="Animate Dead" id="2316" allowfaruse="1" charges="100" lvl="27" maglv="4" exhaustion="1100" blocktype="solid" script="animate dead rune.lua"/>
+	<rune name="Chameleon" id="2291" allowfaruse="1" charges="100" lvl="27" maglv="4" exhaustion="1100" aggressive="0" selftarget="1" blocktype="solid" function="chameleon"/>
+	<rune name="Magic Wall" id="2293" allowfaruse="1" charges="100" lvl="80" maglv="9" exhaustion="500" aggressive="1" blocktype="solid" script="magic wall rune.lua"/>
+	<rune name="Paralyze" id="2278" allowfaruse="1" charges="100" lvl="54" maglv="18" exhaustion="1600" needtarget="1" blocktype="solid" script="paralyze rune.lua">
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+	</rune>
+	
+	<!-- Support Runes -->
+	<rune name="Intense Healing Rune" id="2265" allowfaruse="1" charges="100" lvl="15" maglv="1" exhaustion="1000" aggressive="0" needtarget="1" blocktype="solid" script="intense healing rune.lua"/>
+	<rune name="Ultimate Healing Rune" id="2273" allowfaruse="1" charges="100" lvl="24" maglv="4" exhaustion="1000" aggressive="0" needtarget="1" blocktype="solid" script="ultimate healing rune.lua"/>
+	<rune name="Antidote Rune" id="2266" allowfaruse="1" charges="100" lvl="15" maglv="0" exhaustion="1000" aggressive="0" needtarget="1" blocktype="solid" script="antidote rune.lua"/>
+	<rune name="Destroy Field" id="2261" allowfaruse="1" charges="100" lvl="17" maglv="3" exhaustion="1000" aggressive="0" range="5" script="destroy field rune.lua"/>
+	
+	<!-- Custom Runes -->
+	<rune name="Polymorph" id="2270" charges="100" lvl="10" maglv="20" exhaustion="1100" blocktype="solid" allowfaruse="1" enabled="0" script="polymorph.lua"/>
+	<rune name="Combustion" id="2269" charges="100" lvl="10" maglv="20" exhaustion="1100" blocktype="solid" allowfaruse="1" enabled="0" script="combustion.lua"/>
+	<rune name="Energy Arrow" id="2281" charges="100" lvl="10" maglv="20" exhaustion="1100" blocktype="solid" allowfaruse="1" enabled="0" script="energy wave.lua"/>
+	<rune name="Magic Prison" id="2272" charges="100" lvl="10" maglv="20" exhaustion="1100" blocktype="solid" allowfaruse="1" enabled="0" script="magic prison.lua"/>
+	<rune name="Stealth" id="2283" charges="100" lvl="10" maglv="20" exhaustion="1100" blocktype="solid" allowfaruse="1" enabled="0" script="invisible.lua"/>
+	<rune name="Drunkness" id="2267" charges="100" lvl="10" maglv="20" exhaustion="1100" blocktype="solid" allowfaruse="1" enabled="0" script="drunk.lua"/>
+	
+	<rune name="Mana Charge" id="2296" allowfaruse="1" charges="100" lvl="10" maglv="1" exhaustion="800" aggressive="0" needtarget="1" blocktype="solid" script="mana rune.lua"></rune>
+
+	<!-- Instant Attack Spells -->
+	<instant name="Death Strike" words="exori mort" lvl="12" mana="20" prem="0" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="1100" needlearn="0" script="death strike.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Flame Strike" words="exori flam" lvl="12" mana="20" prem="0" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="1100" needlearn="0" script="flame strike.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Energy Strike" words="exori vis" lvl="12" mana="20" prem="0" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="1100" needlearn="0" script="energy strike.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Whirlwind Throw" words="exori hur" lvl="15" mana="40" prem="0" range="5" needtarget="1" blockwalls="1" needweapon="1" exhaustion="1100" needlearn="0" script="whirlwind throw.lua">
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Fire Wave" words="exevo flam hur" lvl="18" mana="80" direction="1" exhaustion="1100" needlearn="0" script="fire wave.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />		
+	</instant>
+	<instant name="Ethereal Spear" words="exori con" lvl="23" mana="35" prem="0" range="5" needtarget="1" exhaustion="1100" blockwalls="1" needlearn="0" script="ethereal spear.lua">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Energy Beam" words="exevo vis lux" lvl="23" mana="40" direction="1" exhaustion="1100" needlearn="0" script="energy beam.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Great Energy Beam" words="exevo gran vis lux" lvl="29" mana="110" direction="1" exhaustion="1100" needlearn="0" script="great energy beam.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Groundshaker" words="exori mas" lvl="33" mana="160" prem="0" needweapon="1" exhaustion="1100" needlearn="0" script="groundshaker.lua">
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Berserk" words="exori" lvl="35" mana="115" prem="0" needweapon="1" exhaustion="1100" needlearn="0" script="berserk.lua">
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Energy Wave" words="exevo mort hur" lvl="38" mana="170" direction="1" exhaustion="1100" needlearn="0" script="energy wave.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Ultimate Explosion" words="exevo gran mas vis" lvl="60" mana="1200" selftarget="1" prem="0" exhaustion="1400" needlearn="0" script="ultimate explosion.lua">
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Poison Storm" words="exevo gran mas pox" lvl="50" mana="600" selftarget="1" prem="0" exhaustion="1400" needlearn="0" script="poison storm.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Fierce Berserk" words="exori gran" lvl="70" maglv="6" manapercent="20" prem="0" needweapon="0" exhaustion="1100" needlearn="0" script="exori gran.lua">
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Divine Missile" words="exori san" lvl="40" mana="20" prem="0" casterTargetOrDirection="1" needlearn="0" lockwalls="1" exhaustion="1100" script="divine missile.lua">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin"/>
+		<vocation name="Lord Paladin"/>
+	</instant>
+	<instant name="Divine Caldera" words="exevo mas san" lvl="50" mana="160" prem="0" selftarget="1" exhaustion="1100" needlearn="0" script="divine caldera.lua">
+		<vocation name="Royal Paladin"/>
+		<vocation name="Lord Paladin"/>
+	</instant>
+	<instant name="Ice Strike" words="exori frigo" lvl="15" mana="20" prem="0" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="1100" needlearn="0" script="ice strike.lua">
+		<vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer"/>
+		<vocation name="Supreme Sorcerer"/>
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid"/>
+	</instant>
+	<instant name="Ice Wave" words="exevo frigo hur" lvl="18" mana="25" direction="1" exhaustion="1100" needlearn="0" script="ice wave.lua">
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid"/>
+	</instant>
+	<instant name="Terra Strike" words="exori tera" lvl="13" mana="20" prem="0" range="3" casterTargetOrDirection="1" blockwalls="1" exhaustion="1100" needlearn="0" script="terra strike.lua">
+		<vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer"/>
+		<vocation name="Supreme Sorcerer"/>
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid"/>
+	</instant>
+	<instant name="Terra Wave" words="exevo tera hur" lvl="38" mana="210" direction="1" exhaustion="1100" needlearn="0" script="terra wave.lua">
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid"/>
+	</instant>
+	<instant name="Wild Growth" words="exevo grav vita" lvl="80" mana="220" prem="0" direction="1" blocking="1" exhaustion="1000" needlearn="0" script="wild growth.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />		
+	</instant>
+	
+	<!-- Instant Support Spells -->
+	<instant name="Light Healing" words="exura" lvl="9" mana="25" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="light healing.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Antidote" words="exana pox" lvl="10" mana="30" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="antidote.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Intense Healing" words="exura gran" lvl="11" mana="70" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="intense healing.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Heal Friend" words="exura sio" lvl="18" mana="140" prem="0" aggressive="0" needtarget="1" params="1" exhaustion="800" needlearn="0" script="heal friend.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Ultimate Healing" words="exura vita" lvl="20" mana="160" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="ultimate healing.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Mass Healing" words="exura gran mas res" lvl="36" mana="150" prem="0" aggressive="0" exhaustion="800" needlearn="0" script="mass healing.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Divine Healing" words="exura san" lvl="35" mana="210" prem="0" selftarget="1" aggressive="0" exhaustion="800" needlearn="0" script="divine healing.lua">
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Wound Cleansing" words="exana mort" lvl="30" mana="65" prem="0" selftarget="1" aggressive="0" exhaustion="800" needlearn="0" script="wound cleasing.lua">
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Light" words="utevo lux" lvl="8" mana="20" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="light.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Magic Rope" words="exani tera" lvl="9" mana="20" prem="0" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="magic rope.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Levitate" words="exani hur" mana="0" prem="0" aggressive="0" exhaustion="800" params="1" needlearn="0" function="Levitate">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Game Master" />
+	</instant>
+	<instant name="Great Light" words="utevo gran lux" lvl="13" mana="60" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="great light.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Magic Shield" words="utamo vita" lvl="14" mana="50" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="magic shield.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Haste Player" words="utani hur" lvl="14" mana="60" prem="0" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="haste.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Challenge" words="exeta res" lvl="20" mana="30" prem="0" aggressive="0" exhaustion="800" needlearn="0" script="challenge.lua">
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Strong Haste" words="utani gran hur" lvl="20" mana="100" prem="0" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="strong haste.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Creature Illusion" words="utevo res ina" lvl="23" mana="100" aggressive="0" params="1" exhaustion="800" needlearn="0" function="Illusion">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Ultimate Light" words="utevo vis lux" lvl="26" mana="140" prem="0" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="ultimate light.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Cancel Invisibility" words="exana ina" lvl="26" mana="200" prem="0" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="cancel invisibility.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />		
+	</instant>
+	<instant name="Invisibility" words="utana vid" lvl="35" mana="440" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="invisible.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Summon Creature" words="utevo res" lvl="100" params="1" exhaustion="800" needlearn="0" function="summonMonster">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Undead Legion" words="exana mas mort" lvl="30" mana="500" prem="0" exhaustion="800" needlearn="0" script="undead legion.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+
+	<!-- FoxWorld Istant Spell -->
+	<instant name="Paladin Song" words="exori song" lvl="100" manapercent="20" selftarget="1" prem="0" exhaustion="1100" needlearn="0" script="exori song.lua">
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Mass Paralyze" words="exevo para" lvl="110" mana="500" selftarget="1" prem="0" exhaustion="1200" needlearn="0" script="mass paralyze.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Gran Berserk" words="uber exori" lvl="100" manapercent="40" selftarget="1" prem="0" exhaustion="1100" needlearn="0" script="uber exori.lua">
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Ice Thunder" words="housenka" lvl="150" mana="0" direction="1" prem="1" exhaustion="0" needlearn="0" script="housenka.lua">
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Rasenshuriken" words="rasenshuriken" lvl="150" mana="0" prem="1" exhaustion="0" needlearn="0" script="rasenshuriken.lua">
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Gaia Poison" words="hyakka ryouran" lvl="150" mana="0" direction="1" prem="1" exhaustion="0" needlearn="0" script="hyakka ryouran.lua">
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Senpou Hur" words="senpou hur" lvl="150" mana="0" prem="1" aggressive="0" selftarget="1" exhaustion="800" needlearn="0" script="senpou hur.lua">
+		<vocation name="Monster Knight" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Ultimate Berserk" words="ezzori" lvl="200" mana="0" selftarget="1" prem="1" exhaustion="1100" needlearn="0" script="ezzori.lua">
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Zesshou Hachimon" words="zesshou hachimon" lvl="200" mana="0" selftarget="1" prem="0" exhaustion="1400" needlearn="0" script="zesshou hachimon.lua">
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Jukai Kousan" words="jukai kousan" lvl="200" mana="0" selftarget="1" prem="0" exhaustion="1400" needlearn="0" script="jukai kousan.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</instant>
+	<instant name="Yahumuki" words="yahumuki" lvl="200" mana="0" selftarget="1" prem="0" exhaustion="1400" needlearn="0" script="yahumuki.lua">
+		<vocation name="Elite Knight" />
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Mugen Shiki" words="mugen shiki" lvl="200" mana="0" selftarget="1" prem="0" exhaustion="1400" needlearn="0" script="mugen shiki.lua">
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Bones Wall" words="karamatsu no mai" lvl="180" mana="0" selftarget="1" prem="1" blocking="1" exhaustion="1100" needlearn="0" script="bones wall.lua">
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Mass Wild Growth" words="exevo grav mas" lvl="180" mana="0" prem="1" direction="1" blocking="0" exhaustion="1100" needlearn="0" script="mass wild growth.lua">
+		<vocation name="Majestic Druid" />
+	</instant>
+	
+	<instant name="King Teleport" words="king teleport" lvl="80" mana="0" prem="0" direction="0" needtarget="1" blocking="0" exhaustion="0" needlearn="0" script="king teleport.lua">		
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	
+	<instant name="Morthar Summon" words="morthar summon" lvl="80" mana="0" prem="0" direction="0" blocking="0" exhaustion="0" needlearn="0" script="morthar summon.lua">		
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	
+	<instant name="Change Corpse" words="change corpse" lvl="80" mana="0" prem="0" direction="0" needtarget="1" blocking="0" exhaustion="0" needlearn="0" script="change corpse.lua">		
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />	
+	</instant>
+	
+	<instant name="Anti Exiva" words="exana exiva" lvl="8" mana="0" prem="0" direction="0" aggressive="0" needtarget="0" blocking="0" exhaustion="800" needlearn="0" script="exana exiva.lua">
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	
+	<instant name="Extreme Paralyze" words="extreme paralyze" lvl="80" mana="0" prem="0" selftarget="1" blocking="0" exhaustion="0" needlearn="0" script="extreme paralyze.lua">	
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	
+	<instant name="Diablo Rain" words="diablo rain" lvl="80" mana="0" prem="0" direction="0" aggressive="0" needtarget="0" blocking="0" exhaustion="0" needlearn="0" script="diablo rain.lua">
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+
+	<!-- Conjure Spells -->
+	<conjure name="Conjure Arrow" words="exevo con" lvl="13" mana="100" soul="0" conjureId="2544" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Create Food" words="exevo pan" lvl="14" mana="120" soul="0" exhaustion="1100" needlearn="0" function="conjureFood">
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Knight" />
+		<vocation name="Sorcerer" />		
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Elite Knight" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Lord Paladin" />
+		<vocation name="Monster Knight" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Poisoned Arrow" words="exevo con pox" lvl="16" mana="130" soul="0" conjureId="2545" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Conjure Bolt" words="exevo con mort" lvl="17" mana="140" soul="0" prem="0" conjureId="2543" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Conjure Sniper Arrow" words="exevo con hur" enabled="0" lvl="24" mana="160" soul="0" prem="1" conjureId="7364" conjureCount="5" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Explosive Arrow" words="exevo con flam" lvl="25" mana="290" soul="0" conjureId="2546" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Conjure Piercing Bolt" words="exevo con grav" enabled="0" lvl="33" mana="180" soul="0" prem="1" conjureId="7363" conjureCount="5" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Enchant Staff" words="exeta vis" lvl="41" mana="80" prem="0" conjureId="2433" reagentId="2401" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Enchant Spear" words="exeta con" lvl="45" mana="350" soul="0" prem="0" conjureId="7367" reagentId="2389" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Power Bolt" words="exevo con vis" lvl="59" mana="100" soul="0" prem="0" conjureId="2547" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Infernal Bolt" words="exevo con mas vis" lvl="80" mana="200" soul="0" prem="0" conjureId="6529" conjureCount="15" exhaustion="1100" needlearn="0" function="conjureItem">
+		<vocation name="Royal Paladin" />
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Poison Field" words="adevo grav pox" lvl="14" mana="200" soul="0" reagentId="2260" conjureId="2285" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Light Magic Missile" words="adori min vis" lvl="15" mana="120" soul="0" reagentId="2260" conjureId="2287" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Fire Field" words="adevo grav flam" lvl="15" mana="240" soul="0" reagentId="2260" conjureId="2301" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Fireball" words="adori flam" lvl="27" mana="460" soul="0" prem="0" reagentId="2260" conjureId="2302" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Energy Field" words="adevo grav vis" lvl="18" mana="320" soul="0" reagentId="2260" conjureId="2277" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Stalagmite" words="adori tera" lvl="24" mana="400" soul="0" prem="0" reagentId="2260" conjureId="2292" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Great Fireball" words="adori mas flam" lvl="30" mana="530" soul="0" reagentId="2260" conjureId="2304" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Heavy Magic Missile" words="adori vis" lvl="25" mana="350" soul="0" reagentId="2260" conjureId="2311" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Poison Bomb" words="adevo mas pox" lvl="25" mana="520" soul="0" prem="0" reagentId="2260" conjureId="2286" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Firebomb" words="adevo mas flam" lvl="27" mana="600" soul="0" reagentId="2260" conjureId="2305" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />		
+	</conjure>
+	<conjure name="Soulfire" words="adevo res flam" lvl="27" mana="600" soul="0" prem="0" reagentId="2260" conjureId="2308" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Poison Wall" words="adevo mas grav pox" lvl="29" mana="640" soul="0" reagentId="2260" conjureId="2289" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Explosion" words="adevo mas hur" lvl="31" mana="570" soul="0" reagentId="2260" conjureId="2313" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Fire Wall" words="adevo mas grav flam" lvl="33" mana="780" soul="0" reagentId="2260" conjureId="2303" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Energy Bomb" words="adevo mas vis" lvl="37" mana="880" soul="0" prem="0" reagentId="2260" conjureId="2262" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Energy Wall" words="adevo mas grav vis" lvl="41" mana="1000" soul="0" reagentId="2260" conjureId="2279" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Sudden Death" words="adori gran mort" lvl="45" mana="985" soul="0" reagentId="2260" conjureId="2268" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Supreme Sorcerer" />
+	</conjure>
+	<conjure name="Antidote Rune" words="adana pox" lvl="15" mana="200" soul="0" reagentId="2260" conjureId="2266" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Intense Healing Rune" words="adura gran" lvl="15" mana="240" soul="0" reagentId="2260" conjureId="2265" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Ultimate Healing Rune" words="adura vita" lvl="24" mana="400" soul="0" reagentId="2260" conjureId="2273" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Convince Creature" words="adeta sio" lvl="16" mana="200" soul="0" reagentId="2260" conjureId="2290" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Animate Dead" words="adana mort" lvl="27" mana="600" soul="0" prem="0" reagentId="2260" conjureId="2316" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer"/>
+		<vocation name="Druid" />
+		<vocation name="Master Sorcerer"/>
+		<vocation name="Elder Druid" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Chameleon" words="adevo ina" lvl="27" mana="600" soul="0" reagentId="2260" conjureId="2291" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Destroy Field" words="adito grav" lvl="17" mana="120" soul="0" reagentId="2260" conjureId="2261" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Magic Wall" words="adevo grav tera" lvl="32" mana="750" soul="0" prem="0" reagentId="2260" conjureId="2293" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />	
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />	
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Paralyze" words="adana ani" lvl="54" mana="1400" soul="0" prem="0" reagentId="2260" conjureId="2278" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />	
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />	
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Icicle" words="adori frigo" lvl="28" mana="460" soul="0" prem="0" reagentId="2260" conjureId="2271" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid" />	
+	</conjure>
+	<conjure name="Avalanche" words="adori mas frigo" lvl="30" mana="530" soul="0" reagentId="2260" conjureId="2274" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Stone Shower" words="adori mas tera" lvl="28" mana="430" soul="0" prem="0" reagentId="2260" conjureId="2288" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid"/>
+		<vocation name="Majestic Druid" />
+	</conjure>
+	<conjure name="Thunderstorm" words="adori mas vis" lvl="28" mana="430" soul="0" prem="0" reagentId="2260" conjureId="2315" conjureCount="100" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer"/>
+		<vocation name="Supreme Sorcerer"/>
+	</conjure>
+	
+	<!-- Custom Conjure Spells -->
+	<conjure name="Blank Rune" words="adori blank" lvl="1" mana="60" soul="0" prem="0" conjureId="2260" conjureCount="1" exhaustion="1100" needlearn="0" function="conjureRune">
+		<vocation name="Sorcerer" />
+		<vocation name="Druid" />
+		<vocation name="Paladin" />
+		<vocation name="Master Sorcerer" />
+		<vocation name="Elder Druid" />
+		<vocation name="Royal Paladin" />
+		<vocation name="Supreme Sorcerer" />
+		<vocation name="Majestic Druid" />	
+		<vocation name="Lord Paladin" />
+	</conjure>
+	<conjure name="Mana Charge" words="adura mani" lvl="24" mana="400" soul="0" reagentId="2260" conjureId="2296" conjureCount="100" exhaustion="1100" needlearn="0" enabled="0" function="conjureRune">	
+	</conjure>
+	<instant name="Aura Sword" words="exevo aura sword" lvl="50" mana="0" soul="0" prem="1" aggressive="0" selftarget="1" exhaustion="1100" needlearn="0" script="exevo aura sword.lua">
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Aura Axe" words="exevo aura axe" lvl="50" mana="0" soul="0" prem="1" aggressive="0" selftarget="1" exhaustion="1100" needlearn="0" script="exevo aura axe.lua">
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Aura Club" words="exevo aura club" lvl="50" mana="0" soul="0" prem="1" aggressive="0" selftarget="1" exhaustion="1100" needlearn="0" script="exevo aura club.lua">
+		<vocation name="Monster Knight" />
+	</instant>
+	<instant name="Aura Bow" words="exevo aura bow" lvl="50" mana="0" soul="0" prem="1" aggressive="0" selftarget="1" exhaustion="1100" needlearn="0" script="exevo aura bow.lua">
+		<vocation name="Lord Paladin" />
+	</instant>
+	<instant name="Aura Wand" words="exevo aura wand" lvl="50" mana="0" soul="0" prem="1" aggressive="0" selftarget="1" exhaustion="1100" needlearn="0" script="exevo aura wand.lua">
+		<vocation name="Supreme Sorcerer" />
+	</instant>
+	<instant name="Aura rod" words="exevo aura rod" lvl="50" mana="0" soul="0" prem="1" aggressive="0" selftarget="1" exhaustion="1100" needlearn="0" script="exevo aura rod.lua">
+		<vocation name="Majestic Druid" />
+	</instant>
+	
+	<!-- Monster Spells -->
+	<rune name="bolt" id="20001" enabled="1" script="monsters/bolt.lua"></rune>
+	<rune name="spider bite" id="20002" enabled="1" script="monsters/spider bite.lua"></rune>
+	<rune name="imitate" id="20003" enabled="1" script="monsters/imitate.lua"></rune>
+	<rune name="explosive arrow" id="20004" enabled="1" script="monsters/explosive arrow.lua"></rune>
+	<rune name="poison spit" id="20005" enabled="1" script="monsters/poison spit.lua"></rune>
+	<rune name="arrow" id="20006" enabled="1" script="monsters/arrow.lua"></rune>
+	<rune name="spear" id="20007" enabled="1" script="monsters/spear.lua"></rune>
+	<rune name="throwing knife" id="20008" enabled="1" script="monsters/throwing knife.lua"></rune>
+	<rune name="throwing star" id="20009" enabled="1" script="monsters/throwing star.lua"></rune>
+	<rune name="small stone" id="20010" enabled="1" script="monsters/small stone.lua"></rune>
+	<rune name="poison arrow" id="20011" enabled="1" script="monsters/poison arrow.lua"></rune>
+	<rune name="large rock" id="20012" enabled="1" script="monsters/large rock.lua"></rune>
+	<rune name="mana drain" id="20013" enabled="1" script="monsters/mana drain.lua"></rune>
+	<rune name="dragon fireball" id="20014" enabled="1" script="monsters/dragon fireball.lua"></rune>
+	<rune name="dragon lord fireball" id="20015" enabled="1" script="monsters/dragon lord fireball.lua"></rune>
+	<rune name="life drain" id="20016" enabled="1" script="monsters/life drain.lua"></rune>
+	<rune name="bloodball" id="20020" enabled="1" script="monsters/bloodball.lua"></rune>
+	<rune name="nightmare_drain" id="20018" enabled="1" script="monsters/nightmare_drain.lua"></rune>
+	<rune name="nightmare_poison" id="20019" enabled="1" script="monsters/nightmare_poison.lua"></rune>
+	<rune name="dragon firebomb" id="20017" enabled="1" script="monsters/dragon firebomb.lua"></rune>
+	<rune name="fire shot" id="20021" enabled="1" script="monsters/fire shot.lua"></rune>
+	<rune name="poison shot" id="20022" enabled="1" script="monsters/poison shot.lua"></rune>
+	<rune name="death shot" id="20023" enabled="1" script="monsters/death shot.lua"></rune>
+	<rune name="eletricball" id="20024" enabled="1" script="monsters/eletricball.lua"></rune>
+	<rune name="eletricbomb" id="20025" enabled="1" script="monsters/eletricbomb.lua"></rune>
+	<rune name="golden arrow" id="20026" enabled="1" script="monsters/golden arrow.lua"></rune>
+	<rune name="snow ball" id="20027" enabled="1" script="monsters/snow ball.lua"></rune>
+	
+	<rune name="vengeful spirit energy" id="20028" enabled="1" script="monsters/vengeful spirit/vengeful spirit energy.lua"></rune>
+
+	
+	<!-- Instant GOD Spells -->
+	<instant name="god finish" words="god end" enabled="0" needtarget="1" script="GOD/god end.lua"></instant>
+	<instant name="god heal" words="god heal" enabled="0" needtarget="1" script="GOD/god heal.lua"></instant>
+	
+	<!-- Instant Monster Spells -->
+	<instant name="saco de pancada heal" words="saco de pancada heal" selftarget="1" enabled="0" script="monsters/saco de pancada/saco de pancada heal.lua"></instant>
+	
+	<instant name="change corpse monster" words="change corpse monster" enabled="0" needtarget="1" script="monsters/vengeful spirit/change corpse monster.lua"></instant>
+	<instant name="vengeful spirit exori" words="vengeful spirit exori" direction="0" enabled="0" script="monsters/vengeful spirit/vengeful spirit exori.lua"></instant>
+	
+	<instant name="king teleport monster" words="king teleport monster" enabled="0" needtarget="1" script="monsters/the old king/king teleport monster.lua"></instant>
+	<instant name="king aura" words="king aura" enabled="0" script="monsters/the old king/king aura.lua"></instant>
+	<instant name="king bomb" words="king bomb" enabled="0" script="monsters/the old king/king bomb.lua"></instant>
+	
+	<instant name="morthar metralhadora" words="morthar metralhadora" enabled="0" direction="1" script="monsters/morthar the giant/morthar metralhadora.lua"></instant>
+	<instant name="morthar chuva de pedra" words="morthar meteoros" enabled="0" script="monsters/morthar the giant/morthar meteoros.lua"></instant>
+	<instant name="morthar focus" words="morthar focus" needtarget="1" enabled="0" script="monsters/morthar the giant/morthar focus.lua"></instant>
+	
+	<instant name="aegis random attack" words="aegis random attack" needtarget="1" enabled="0" script="monsters/aegis/aegis random attack.lua"></instant>
+	<instant name="aegis random attack 2" words="aegis random attack 2" needtarget="1" enabled="0" script="monsters/aegis/aegis random attack 2.lua"></instant>
+	<instant name="aegis aura" words="aegis aura" enabled="0" script="monsters/aegis/aegis aura.lua"></instant>
+	
+	<instant name="brayoth wave" words="brayoth wave" enabled="0" direction="1" script="monsters/brayoth/brayoth wave.lua"></instant>
+	<instant name="brayoth fbs" words="brayoth fbs" enabled="0" direction="1" script="monsters/brayoth/brayoth fbs.lua"></instant>
+	<instant name="brayoth fs" words="brayoth fs" enabled="0" script="monsters/brayoth/brayoth fs.lua"></instant>
+	<instant name="brayoth missile" words="brayoth missile" enabled="0" needtarget="1" script="monsters/brayoth/brayoth missile.lua"></instant>
+	
+	<instant name="hydra bubblewave" words="hydra bubblewave" direction="1" enabled="0" script="monsters/hydra/hydra bubblewave.lua"></instant>
+	<instant name="hydra poisonwave" words="hydra poisonwave" direction="1" enabled="0" script="monsters/hydra/hydra poisonwave.lua"></instant>
+	
+	<instant name="hydropharus bubblewave" words="hydropharus bubblewave" direction="1" enabled="0" script="monsters/hydropharus/hydropharus bubblewave.lua"></instant>
+	<instant name="hydropharus poisonwave" words="hydropharus poisonwave" direction="1" enabled="0" script="monsters/hydropharus/hydropharus poisonwave.lua"></instant>
+
+	<instant name="defiler" words="defiler" direction="0" enabled="0" script="monsters/defiler/defiler.lua"></instant>
+	
+	<instant name="diablo deathstar" words="diablo deathstar" enabled="0" script="monsters/diablo/diablo deathstar.lua"></instant>
+	<instant name="diablo exori" words="diablo exori" enabled="0" script="monsters/diablo/diablo exori.lua"></instant>
+	<instant name="diablo rain monster" words="diablo rain monster" enabled="0" script="monsters/diablo/diablo rain monster.lua"></instant>
+	<instant name="diablo aura" words="diablo aura" enabled="0" script="monsters/diablo/diablo aura.lua"></instant>
+	<instant name="diablo multiply" words="diablo multiply" enabled="0" script="monsters/diablo/diablo multiply.lua"></instant>
+	<instant name="diablo fire" words="diablo fire" enabled="0" script="monsters/diablo/diablo fire.lua"></instant>
+	
+	<instant name="mini diablo rain" words="mini diablo rain" enabled="0" script="monsters/mini diablo/mini diablo rain.lua"></instant>
+	<instant name="mini diablo heal" words="mini diablo heal" selftarget="1" enabled="0" script="monsters/mini diablo/mini diablo heal.lua"></instant>
+	<instant name="mini diablo teleport" words="mini diablo teleport" enabled="0" script="monsters/mini diablo/mini diablo teleport.lua"></instant>
+	
+	<instant name="exori sd" words="exori sd" enabled="0" script="monsters/dark dragon/exori sd.lua"></instant>
+
+	<instant name="aura ice outfit" words="aura ice outfit" enabled="0" script="monsters/zabolick/aura ice outfit.lua"></instant>
+	<instant name="aura tornado" words="aura tornado" enabled="0" script="monsters/zabolick/aura tornado.lua"></instant>
+	<instant name="extreme paralyze monster" words="extreme paralyze monster" enabled="0" script="monsters/zabolick/extreme paralyze monster.lua"></instant>
+	
+	<instant name="great iceball" words="great iceball" direction="1" needtarget="1" enabled="0" script="monsters/ice titan/great iceball.lua"></instant>
+	<instant name="magicblue wave" words="magicblue wave" direction="1" enabled="0" script="monsters/ice titan/magicblue wave.lua"></instant>
+	
+	<instant name="apocalypse" words="exevo mas lux" enabled="0" script="monsters/unused/apocalypse.lua"></instant>
+	
+	<instant name="haste" words="haste" selftarget="1" needlearn="0" enabled="0" script="/monsters/haste monster.lua"></instant>
+	
+	<instant name="hypnosis" words="hypnosis" needtarget="1" enabled="0" script="monsters/dworc hypnotist/hypnosis.lua"></instant>
+	
+	<instant name="kruha poison wave" words="kruha poison wave" direction="1" enabled="0" script="monsters/kruha/kruha poison wave.lua"></instant>
+	<instant name="kruha poison storm" words="kruha poison storm" enabled="0" script="monsters/kruha/kruha poison storm.lua"></instant>
+	
+	<instant name="statue random attack" words="statue random attack" needtarget="1" enabled="0" script="monsters/defense statue/statue random attack.lua"></instant>
+	<instant name="defense statue rotation" words="defense statue rotation" selftarget="1" enabled="0" script="monsters/defense statue/defense statue rotation.lua"></instant>
+	
+	<instant name="summoner statue rotation" words="summoner statue rotation" selftarget="1" enabled="0" script="monsters/summoner statue/summoner statue rotation.lua"></instant>
+	
+	<instant name="atropos dream" words="atropos dream" needtarget="1" enabled="0" script="monsters/atropos/atropos dream.lua"></instant>
+	
+	<instant name="freeze wave" words="freeze wave" enabled="0" script="monsters/freeze beast/freeze wave.lua"></instant>
+	<instant name="freeze beast animation" words="freeze beast animation" enabled="0" script="monsters/freeze beast/freeze beast animation.lua"></instant>
+	<instant name="freeze tempest" words="freeze tempest" enabled="0" script="monsters/freeze beast/freeze tempest.lua"></instant>
+	
+	<instant name="magnetism" words="magnetism" needtarget="1" enabled="0" script="monsters/magnetic tower/magnetism.lua"></instant>
+	<instant name="magnetic aura" words="magnetic aura" enabled="0" script="monsters/magnetic tower/magnetic aura.lua"></instant>
+	<instant name="magnetic explosion" words="magnetic explosion" enabled="0" script="monsters/magnetic tower/magnetic explosion.lua"></instant>
+	
+	<instant name="wall second looktype" words="wall second looktype" selftarget="1" enabled="0" script="monsters/wall/wall second looktype.lua"></instant>
+	
+	<instant name="gran tower aura" words="gran tower aura" enabled="0" script="monsters/gran tower/gran tower aura.lua"></instant>
+	
+	<!-- House Spells -->
+	<instant name="House Guest List" words="aleta sio" exhaustion="2000" selftarget="1" enabled="1" function="editHouseGuest"/>
+	<instant name="House Subowner List" words="aleta som" exhaustion="2000" selftarget="1" enabled="1" function="editHouseSubOwner"/>
+	<instant name="House Door List" words="aleta grav" exhaustion="2000" selftarget="1" enabled="1" function="editHouseDoor"/>
+	<instant name="House Kick" words="alana sio" exhaustion="2000" params="1" enabled="1" function="houseKick"/>
+</spells>
