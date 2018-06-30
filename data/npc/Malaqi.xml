@@ -1,0 +1,9 @@
+<npc name="Malaqi" script="data/npc/scripts/parcel.lua" walkinterval="2000" floorchange="0">
+<health now="150" max="150"/>
+<look type="128" head="0" body="22" legs="95" feet="19" addons="2"/>
+<parameters>
+<parameter key="message_greet" value="Olá |PLAYERNAME|. Eu vendo parcel, label e letter. Basta dizer {trade}." />
+<parameter key="module_shop" value="1" />
+<parameter key="shop_buyable" value="parcel,2595,30;label,2599,10;letter,2597,20" />
+</parameters>
+</npc>

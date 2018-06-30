@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Captain Mirage" script="data/npc/scripts/boat bangalore 1.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="129" head="96" body="113" legs="95" feet="115" addons="0"/>
+	<parameters>
+	<parameter key="message_greet" value="Bem-vindo ao meu barco! Eu e minhas {tartarugas}, estamos fazendo {rota} por algumas ilhas tropicais." />
+	</parameters>
+</npc>

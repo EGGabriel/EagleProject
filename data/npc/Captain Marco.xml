@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Captain Marco" script="data/npc/scripts/ship_teerok.lua" access="1" walkinterval="0" floorchange="0">
+<look type="289" head="90" body="90" legs="0" feet="60" addons="3"/>
+<parameters>
+		<parameter key="message_greet" value="Greetings |PLAYERNAME|! We are about to travel to {Teerok}, wanna join us? Only costs 1 crystal coin!"/>
+</parameters>
+</npc>

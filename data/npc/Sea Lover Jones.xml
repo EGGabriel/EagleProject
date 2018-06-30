@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sea Lover Jones" script="data/npc/scripts/boat_azura.lua" access="1" walkinterval="0" floorchange="0">
+<look type="251" head="45" body="88" legs="30" feet="50" addons="3"/>
+<parameters>
+	  <parameter key="message_greet" value="Hello |PLAYERNAME|. I'm going to {Fallenori}, would you like to come with me? It's just 10.000 gold coins."/>
+</parameters>
+</npc>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ruby Apprentice" nameDescription="an ruby apprentice" race="blood" experience="1600" speed="300" manacost="0">
+  <health now="1400" max="1400"/>
+  <look type="133" head="3" body="87" legs="28" feet="124" addons="2" corpse="6080"/>
+  <targetchange interval="5000" chance="30"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="10"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" min="-256" max="-297"/>
+    <attack name="ice wave" interval="3000" chance="30" min="-100" max="-200"/>
+    <attack name="avalanche" interval="2000" chance="30" min="-150" max="-200"/>
+  </attacks>
+  <defenses armor="40" defense="40">
+    <defense name="healing" interval="2000" chance="20" min="10" max="100">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="2000" chance="20" duration="2000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+	<element holyPercent="-10"/>
+	<element firePercent="-20"/>
+  </elements>
+  <immunities>
+    <immunity ice="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="1">
+    <summon name="blue butterfly" interval="5000" chance="40" />
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="The sky above..."/>
+    <voice sentence="Freeze!"/>
+  </voices>
+  <loot>
+    <item id="2527" chance="5000"/> 
+    <item id="1994" chance="100000">
+      <inside>
+    <item id="7884" chance="3000"/> 
+    <item id="2527" chance="3000"/> 
+    <item id="7620" countmax="10" chance1="10000" chancemax="0"/> --mana potion
+    <item id="2789" countmax="2" chance1="32000" chancemax="0"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

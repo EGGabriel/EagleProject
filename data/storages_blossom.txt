@@ -1,0 +1,5 @@
+online bonus = 48901.
+dodge = 48902.
+critical = 48903.
+task = 35001 ~ 35013.
+first items = 30001.

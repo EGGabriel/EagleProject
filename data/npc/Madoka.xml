@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<npc name="Madoka" script="data/npc/scripts/bless.lua" walkinterval="2000" floorchange="0"> 
+    <health now="100" max="100"/>
+               <look type="149" head="16" body="109" legs="0" feet="92" addons="1" corpse="2212"/>
+<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Olá humano, tenho o poder para dar {bless}. Se desejares, lhe abençoarei em troca de 500k, pouco para tamanho benefício... " />
+		<parameter key="shop_buyable" value="Amulet Of Loss,2173,10000;Stone Skin Amulet,2197,300000;" />
+	</parameters>
+</npc> 

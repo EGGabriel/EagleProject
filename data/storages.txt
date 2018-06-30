@@ -1,0 +1,9 @@
+dodge = 48902
+aura = 10010
+aura_seconds = 10050
+quests = 7000 ~ 7500
+fallen staff = 10009
+saladetp = 10125
+fallenori = 10120 -> 1
+teerok = 10120 -> 2
+azura = 10120 -> 3

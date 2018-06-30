@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<npc name="Frodo" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0"> 
+    <health now="100" max="100"/> 
+	<look type="134" head="114" body="113" legs="113" feet="113" corpse="2212"/>
+<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="message_greet" value="Como vai Sr(a) |PLAYERNAME| ?. Eu vendo equipamentos e items muito iteis em sua jornada ! Interessado? Fale trade e confira !" />
+		<parameter key="shop_buyable" value="Amulet Of Loss,2173,10000;Bag,1987,100;Backpack,1988,500;Green Bag,1991,100;Yellow Bag,1992,100;Red Bag,1993,100;Purple Bag,1994,100;Blue Bag,1995,100;Gray Bag,1996,100;Golden Bag,1997,100;Green Backpack,1998,1000;Yellow Backpack,1999,1000;Red Backpack,2000,1000;Purple Backpack,2001,1000;Blue Backpack,2002,1000;Gray Backpack,2003,1000; Golden Backpack,2004,1000;Backpack of Holding,2365,25000;Camouflage Bag,3939,1000;Camouflage Backpack,3940,10000;Pirate Bag,5927,3000;Pirate Backpack,5928,10000;Beach Bag,5950,3000; Beach Backpack,5949,10000;Fur Bag,7343,3000;Fur Backpack,7342,10000; Backpack,1999,1000;Brocade Bag,9775,1000; Brocade Backpack,9774,10000;Fishing Rod,2580,1000;Torch,2050,100;Rope,2120,500;Shovel,2554,500;" />
+	</parameters>
+</npc> 

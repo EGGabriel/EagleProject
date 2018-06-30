@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Ali Baba" script="data/npc/scripts/pedras.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="194" head="95" body="116" legs="116" feet="95" addons="0"/>
+	<parameters>
+	<parameter key="message_greet" value="Hello |PLAYERNAME|. I buy precious objects. Say {trade} to see what I buy.." />
+	</parameters>
+</npc>

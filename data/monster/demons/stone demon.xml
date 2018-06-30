@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="stone demon" nameDescription="a stone demon" race="undead" experience="10800" speed="340" manacost="0">
+  <health now="12000" max="12000"/>
+  <look type="12" head="0" body="57" legs="94" feet="19" addons="115" corpse="5995"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="150" attack="150"/>
+    <attack name="berserk" interval="2000" chance="30" min="-200" max="-400"/>
+	<attack name="large rock" interval="2000" chance="25" range="6" target="1" min="-100" max="-600"/>
+  </attacks>
+  <defenses armor="30" defense="30">
+  </defenses>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+  <immunities>
+    <immunity fire="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="hUAhHAhAHAhaHAHAha!" yell="1"/>
+    <voice sentence="YOU SHOULD ENJOY YOUR DEATH AS MUCH AS I DO!" yell="1"/>
+    <voice sentence="CRUSH! SMASH! DESTROY!"/>
+    <voice sentence="ROLLING STONE!" yell="1"/>
+  </voices>
+	<loot>
+		<item id="2148" countmax="90" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="40000"/><!-- gold coin -->
+		<item id="2148" countmax="38" chance="40000"/><!-- gold coin -->
+		<item id="2152" countmax="1" chance="69660"/><!-- platinum coin -->
+		<item id="5954" chance="630"/><!-- demon horn -->
+		<item id="2164" chance="160"/><!-- might ring -->
+		<item id="2432" chance="3950"/><!-- fire axe -->
+		<item id="2470" chance="450"/><!-- golden legs -->
+		<item id="2514" chance="540"/><!-- mastermind shield -->
+		<item id="2472" chance="70"/><!-- magic plate armor -->
+		<item id="2795" countmax="6" chance1="66010"/><!-- fire mushroom -->
+		<item id="2179" chance="1130"/><!-- golden ring -->
+		<item id="8473" chance="12500"/><!-- ultimate health potion -->
+		<item id="8473" chance="12500"/><!-- ultimate health potion -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+		<item id="2520" chance="650"/><!-- demon shield -->
+		<item id="2176" chance="2570"/><!-- orb -->
+		<item id="2387" chance="19260"/><!-- double axe -->
+		<item id="2393" chance="1790"/><!-- giant sword -->
+		<item id="2214" chance="590"/><!-- ring of healing -->
+		<item id="2149" chance="9400"/><!-- small emerald -->
+		<item id="2165" chance="1500"/><!-- stealth ring -->
+		<item id="2151" chance="3500"/><!-- talon -->
+		<item id="7590" chance="10000"/><!-- great mana potion -->
+		<item id="8473" chance="12500"/><!-- ultimate health potion -->
+		<item id="2171" chance="610"/><!-- platinum amulet -->
+		<item id="2496" chance="10"/><!-- horned helmet -->
+		<item id="7393" chance="110"/><!-- demon trophy -->
+			</inside>
+		</item>
+	</loot>
+</monster>
+

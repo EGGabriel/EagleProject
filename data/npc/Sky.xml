@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sky" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="130" head="0" body="35" legs="75" feet="35" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu vendo itens rings. Diga {trade}."/>
+		<parameter key="shop_sellable" value="ring of the sky,2123,20000; gold ring,2179,10000"/>
+		<parameter key="shop_buyable" value="ring of healing,2214,10000;energy ring,2167,10000;time ring,2169,10000;sword ring,2207,10000;axe ring,2208,10000;club ring,2209,10000"/>
+	</parameters>
+</npc>

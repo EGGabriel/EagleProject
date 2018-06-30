@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<monster name="Test Target" nameDescription="a test target" race="blood" experience="0" speed="0" manacost="0">  
+<health now="500000" max="500000"/>
+<look typeex="5787" corpse="6354"/>
+<targetchange interval="500" chance="100"/> 
+<strategy attack="100" defense="0"/>   
+<flags>     
+<flag summonable="0"/>     
+<flag attackable="1"/>      
+<flag hostile="1"/>    
+<flag illusionable="0"/>   
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="0"/>
+<flag staticattack="50"/>  
+<flag lightlevel="6"/>   
+<flag lightcolor="215"/>   
+<flag targetdistance="0"/>   
+<flag runonhealth="0"/>  
+</flags>  
+<attacks>    
+<attack name="melee" interval="500" min="0" max="0"/>  
+</attacks> 
+<defenses armor="1" defense="1">    
+<defense name="healing" interval="5000" min="500000" max="500000"/>   
+</defenses> 
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+</monster>

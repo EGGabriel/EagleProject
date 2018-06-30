@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Gajel" script="data/npc/scripts/By Leonardo/gajel_script.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+               <look type="130" head="19" body="107" legs="49" feet="76" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Hmph... Saudações! Sou um mago ferreiro, especializado em {transformar} Aura Weapons, gostaria de utilizar meus servicos?"/>
+		</parameters>
+</npc>

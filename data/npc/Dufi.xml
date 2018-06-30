@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<npc name="Dufi" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0"> 
+    <health now="100" max="100"/> 
+    <look type="128" head="130" body="112" legs="112" feet="76"/>
+    <parameters> 
+        <parameter key="module_shop" value="1"/> 
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu vendo aol e mana rune. Diga {trade}."/>
+       <parameter key="shop_buyable" value="amulet of loss,2173,10000."/>
+    </parameters> 
+</npc> 

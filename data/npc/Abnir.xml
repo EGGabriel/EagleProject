@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Abnir" script="data/npc/scripts/default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="289" head="67" body="104" legs="2" feet="88" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Hi |PLAYERNAME|. You need distance weapons or munnition? Just say {trade} to see what I offer."/>
+		<parameter key="shop_sellable" value="crossbow,2455,150;bow,2456,130"/>
+		<parameter key="shop_buyable" value="crossbow,2455,360;bow,2456,200;spear,2389,20;poison arrow,2545,18;bolt,2543,3;arrow,2544,2;elvish bow,7438,10000;assassin star,7368,100"/>
+	</parameters>
+</npc>

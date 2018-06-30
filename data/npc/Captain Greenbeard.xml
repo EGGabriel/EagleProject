@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Captain Greenbeard" script="data/npc/scripts/boat bangalore 2.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="160" head="120" body="116" legs="95" feet="132" addons="0"/>
+	<parameters>
+	<parameter key="message_greet" value="Welcome to my boat! You need to travel you back to {FoxWorld}?" />
+	</parameters>
+</npc>

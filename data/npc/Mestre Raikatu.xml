@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mestre Raikatu" script="data/npc/scripts/promotevip.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="194" head="116" body="78" legs="116" feet="116" addons="0"/>
+	<parameters>
+	<parameter key="message_greet" value="Hail |PLAYERNAME|. I have the power to convert you to the Superior Promotion. Some say {promote} and I try!" />
+	</parameters>
+</npc>

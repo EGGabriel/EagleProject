@@ -1,0 +1,20 @@
+<raid>
+<announce delay="0" type="event" message="A very powerful heat is coming from the depth of Teerok's forest." />
+<announce delay="120000" type="event" message="Orshabaal has been summoned from hell to plague the lands of mortals again." />
+<singlespawn delay="0" name="fire elemental" x="270" y="860" z="7" />
+<singlespawn delay="0" name="fire elemental" x="256" y="835" z="7" />
+<singlespawn delay="0" name="fire elemental" x="270" y="890" z="7" />
+<singlespawn delay="0" name="fire elemental" x="280" y="880" z="7" />
+<singlespawn delay="0" name="hellfire" x="280" y="890" z="7" />
+<singlespawn delay="0" name="hellfire" x="270" y="1015" z="8" />
+<singlespawn delay="120000" name="hellfire" x="310" y="1160" z="11" />
+<singlespawn delay="120000" name="hellfire" x="310" y="1160" z="11" />
+<singlespawn delay="120000" name="hellfire" x="320" y="1160" z="11" />
+<singlespawn delay="120000" name="hellfire" x="320" y="1160" z="11" />
+<singlespawn delay="120000" name="great demon" x="310" y="1160" z="11" />
+<singlespawn delay="120000" name="great demon" x="310" y="1160" z="11" />
+<singlespawn delay="120000" name="great demon" x="315" y="1130" z="11" />
+<singlespawn delay="120000" name="great demon" x="320" y="1160" z="11" />
+<singlespawn delay="120000" name="great demon" x="320" y="1130" z="11" />
+<singlespawn delay="120000" name="orshabaal" x="320" y="1130" z="11"/>
+</raid>

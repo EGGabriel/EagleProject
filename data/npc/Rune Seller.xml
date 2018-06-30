@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Rune Seller" script="data/npc/scripts/runes.lua" walkinterval="2000" floorchange="0">
+	<health now="1000" max="1000"/>
+<look type="133" head="0" body="114" legs="73" feet="115" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Bem vindo a minha loja |PLAYERNAME|. Vendo artigos mágicos, diga {trade} pra conferir a lista. Também vendo mochilas cheias, se desejar {buy 1 bp sudden death} ou {buy 1 bp gmp} por exemplo!
+		Siglas das potions: uhp = ultimate health potion | gsp = great spirit potion | gmp = great mana potion | ghp = great health potion | shp = strong health potion | smp = strong mana potion | mp = mana potion."/>
+	</parameters>
+</npc>

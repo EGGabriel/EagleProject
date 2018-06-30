@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raids>
+<raid name="orshabaal" file="scripts/orshabaal.xml" interval2="4320" chance="1" margin="0"/>
+</raids>

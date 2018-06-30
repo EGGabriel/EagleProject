@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<globalevents>
+	<globalevent name="save" interval="1200000" event="script" value="save.lua"/>
+	<globalevent name="clean" interval="1200000" event="script" value="clean.lua"/>
+	<globalevent name="record" type="record" event="script" value="record.lua"/>
+	<globalevent name="shop" interval="300" script="shop.lua"/>
+	<globalevent name="propagandabranca1" interval="36000" script="propagandabranca1.lua"/>
+	<globalevent name="propagandabranca2" interval="36000" script="propagandabranca2.lua"/>
+	<globalevent name="texto" interval="1500" script="texto.lua"/>
+</globalevents>

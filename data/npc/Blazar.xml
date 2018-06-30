@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Blazar" script="data/npc/scripts/Blazar.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="242"/>
+	<parameters>
+	<parameter key="message_greet" value="Hmmm... sinto a sua vontade de mostrar sua força. Vim do {The Volcano} buscando pessoas como você." />
+	</parameters>
+</npc>

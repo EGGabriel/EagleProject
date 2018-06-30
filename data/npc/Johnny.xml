@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Johnny" script="data/npc/scripts/promotion.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="133" head="76" body="114" legs="113" feet="114" addons="1"/>
+		<parameters>
+			<parameter key="message_greet" value="|PLAYERNAME| I feel that you are destined to be powerful... I can {promote} you, its just 20.000 gold coins Are you ready to be promoted?"/>
+		    <parameter key="message_walkaway" value="I know one day you'll come back..." />			
+		</parameters>
+</npc>

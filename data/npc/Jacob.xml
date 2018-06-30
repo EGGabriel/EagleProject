@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Jacob" script="data/npc/scripts/default.lua" walkinterval="0" floorchange="0" speed="0">
+	<health now="100" max="100"/>
+	<look type="146" head="0" body="50" legs="50" feet="75" addons="1" corpse="2212"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Como vai |PLAYERNAME|? Eu vou bem, obrigado, afinal, vendo rings. Diga {trade} para conferir."/>
+		<parameter key="message_walkaway" value="Volte quando quiser!" />
+		<parameter key="message_onsendtrade" value="Tenho aneis de excelente utilidade." />
+		<parameter key="shop_sellable" value="ring of the sky,2123,10000; gold ring,2179,10000;"/>
+		<parameter key="shop_buyable" value="ring of healing,2214,10000;energy ring,2167,30000;time ring,2169,50000;life ring,2168,25000;stealth ring,2165,100000;dwarven ring,2213,200000;"/>
+	</parameters>
+</npc>

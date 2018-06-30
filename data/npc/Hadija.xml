@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Hadija" script="data/npc/scripts/versia teleport2.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="264" head="78" body="122" legs="0" feet="116" addons="0"/>
+	<parameters>
+	<parameter key="message_greet" value="Ohh you is a human? I can teleport you to {Solaris}, you need it?" />
+	</parameters>
+</npc>

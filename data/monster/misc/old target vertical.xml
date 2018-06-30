@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<monster name="Overused Target" nameDescription="an overused target" race="blood" experience="200" speed="0" manacost="0">  
+<health now="250" max="1000"/>
+<look typeex="5778" corpse="0"/>
+<targetchange interval="500" chance="100"/> 
+<strategy attack="100" defense="0"/>   
+<flags>     
+<flag summonable="0"/>     
+<flag attackable="1"/>      
+<flag hostile="0"/>    
+<flag illusionable="0"/>   
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="0"/>
+<flag staticattack="50"/>  
+<flag lightlevel="6"/>   
+<flag lightcolor="215"/>   
+<flag targetdistance="0"/>   
+<flag runonhealth="0"/>  
+</flags>  
+<attacks>    
+<attack name="melee" interval="500" min="0" max="0"/>  
+</attacks> 
+<defenses armor="1" defense="1"/>    
+</monster>

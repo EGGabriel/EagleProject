@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<npc name="Enchanted Dragon" script="data/npc/scripts/exotic.lua" walkinterval="0" floorchange="0">
+<health now="100" max="100"/>
+<look type="34"/>
+<parameters>
+	<parameter key="module_shop" value="1"/>
+	<parameter key="message_greet" value="GROOAAARRR! |PLAYERNAME| {trade}? GROOAAARRR!!!"/>
+		<parameter key="shop_sellable" value="boots of haste,2195,20000;demon dust,5906,700;demon horn,5954,700;red dragon scale,5882,500;
+soul orb,5944,1500;demonic essence,6500,500;zaoan armor,11295,50000;zaoan legs,11298,40000;zaoan helmet,11296,30000;zaoan shoes,11297,25000;rose shield,2527,7000"/>
+        <parameter key="shop_buyable" value="rust remover,9930,400" />
+	</parameters>
+</npc>

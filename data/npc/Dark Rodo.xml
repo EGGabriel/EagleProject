@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<npc name="Rune Seller, Dark Rodo" script="data/npc/scripts/dark rodo.lua" access="3" lookdir="1">
+	<health now="1000" max="1000"/>
+	<look type="130" head="95" body="132" legs="124" feet="114" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hi |PLAYERNAME|. I selling wands, rods and many magic runes. Just say {trade} to see the list."/>
+	</parameters>
+</npc>

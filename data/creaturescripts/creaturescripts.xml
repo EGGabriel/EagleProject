@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<creaturescripts>
+	<event type="statschange" name="combat_dodge" event="script" value="combat_dodge.lua"/>
+	<event type="statschange" name="combat_critical" event="script" value="combat_critical.lua"/>
+    <event type="login" name="onlinebonus" event="script" value="onlinebonus.lua"/>	
+	<event type="login" name="first_items" event="script" value="first_items.lua"/>	
+	<event type="think" name="idle" event="script" value="idle.lua"/>
+	<event type="login" name="playerlogin" event="script" value="login.lua"/>
+	<event type="logout" name="logout" event="script" value="logout.lua"/>	
+    <event type="death" name="PlayerDeath" event="script" value="playerdeath.lua"/>
+	<event type="receivemail" name="mail" event="script" value="mail.lua"/>
+	<event type="reportbug" name="savereportbug" script="reportbug.lua"/>	
+	<event type="think" name="skullcheck" event="script" value="skullcheck.lua"/>
+    </creaturescripts>

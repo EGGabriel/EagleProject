@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mad" script="data/npc/scripts/loot.lua" walkinterval="2000" floorchange="0">
+	<health now="150" max="150"/>
+        <look type="134" head="19" body="95" legs="132" feet="94" corpse="2212" addons="2"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Olá |PLAYERNAME|! Eu compro loot em geral, diga {trade}."/>
+<parameter key="shop_sellable" value="
+--1k--
+halberd,2381,1000;
+double axe,2387,1000;
+serpent sword,2409,1000;
+spike sword,2383,1000;
+two handed sword,2377,1000;
+
+--5k--
+crusader helmet,2497,5000;
+devil helmet,2462,5000;
+mystic turban,2663,5000;
+platinum amulet,2171,5000;
+dragon hammer,2434,5000;
+knight axe,2430,5000;
+
+--10k--
+warrior helmet,2475,10000;
+crown helmet,2491,10000;
+skull staff,2436,10000;
+dragon slayer,7402,10000;
+rose shield,2527,10000;
+war hammer,2391,10000;
+fire axe,2432,10000;
+guardian halberd,2427,10000;
+fire sword,2392,10000;
+giant sword,2393,10000;
+bright sword,2407,10000;
+beholder shield,2518,10000;
+
+--20k--
+knight armor,2476,20000;
+blue robe,2656,20000;
+steel boots,2645,20000;
+dragon lance,2414,20000;
+ice rapier,2396,20000;
+medusa shield,2536,20000;
+tower shield,2528,20000;
+boots of haste,2195,20000;
+crown legs,2488,20000;
+knight legs,2477,20000;
+
+--30k--
+guardian shield,2515,30000;
+crown shield,2519,30000;
+royal helmet,2498,30000;
+
+--40k--
+demon shield,2520,40000;
+vampire shield,2534,40000;
+crown armor,2487,40000;
+
+--50k--
+golden armor,2466,50000;
+dragon scale mail,2492,50000;
+
+--60k--
+golden legs,2470,60000;
+mastermind shield,2514,60000;
+
+--70k--
+
+--80k--
+
+--90k--
+
+--100k--
+demon armor,2494,100000;
+magic sword,2400,100000;
+stonecutter axe,2431,100000;
+thunder hammer,2421,100000;
+magic plate armor,2472,100000;
+demonbone amulet,2136,100000;
+
+--200k--
+
+
+--300k--
+warlord sword,2408,300000;
+amazon armor,2500,300000;
+amazon shield,2537,300000;
+great shield,2522,300000;
+
+--400k--
+
+--500k--
+blessed shield,2523,500000;
+golden boots,2646,500000;
+magic longsword,2390,500000;"/>
+</parameters>
+</npc>

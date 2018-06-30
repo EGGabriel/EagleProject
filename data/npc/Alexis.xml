@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Alexis" script="data/npc/scripts/addons.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="141" head="0" body="84" legs="127" feet="83" addons="1"/>
+<parameters>
+		<parameter key="message_greet" value="Oiiii |PLAYERNAME|. Eu vendo addons diga {first addon} ou {second addon} :)" />
+</parameters>
+</npc>

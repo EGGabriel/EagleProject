@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<npc name="Paniicat" script="data/npc/scripts/paniicat.lua" access="1" lookdir="4">
+               <health now="100" max="100"/>     
+<look type="156" head="59" body="113" legs="128" feet="113" addons="0"/>
+</npc> 
+

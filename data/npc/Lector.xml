@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Lector" script="data/npc/scripts/food.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="128" head="20" body="100" legs="50" feet="99" addons="0"/>
+	<parameters>
+	<parameter key="message_greet" value="Hiho |PLAYERNAME|. I sell the best food in Solaris, just say {trade} to see." />
+	</parameters>
+</npc>

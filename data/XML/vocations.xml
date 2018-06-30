@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vocations>
+	<vocation id="0" name="None" description="none" gaincap="5" gainhp="5" gainmana="5" gainhpticks="1" gainhpamount="0" gainmanaticks="1" gainmanaamount="0" manamultiplier="4.0" attackspeed="1000" soulmax="100" gainsoulticks="120" fromvoc="0" attackable="no">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>	
+	<vocation id="11" name="Paladin" description="a paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="7" manamultiplier="1.4" attackspeed="600" soulmax="100" gainsoulticks="60" fromvoc="11">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.2" club="1.2" sword="1.2" axe="1.2" distance="1.1" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="12" name="Royal Paladin" description="a royal paladin" gaincap="20" gainhp="10" gainmana="15" gainhpticks="1" gainhpamount="10" gainmanaticks="1" gainmanaamount="15" manamultiplier="1.4" attackspeed="400" soulmax="100" gainsoulticks="60" fromvoc="11">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.2" club="1.2" sword="1.2" axe="1.2" distance="1.1" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="13" name="Rogue" description="a rogue" gaincap="20" gainhp="10" gainmana="5" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="7" manamultiplier="1.4" attackspeed="600" soulmax="100" gainsoulticks="60" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.2" club="1.2" sword="1.2" axe="1.2" distance="1.1" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="14" name="Shadow Rogue" description="a shadow rogue" gaincap="20" gainhp="10" gainmana="5" gainhpticks="1" gainhpamount="10" gainmanaticks="1" gainmanaamount="15" manamultiplier="1.4" attackspeed="400" soulmax="100" gainsoulticks="60" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.2" club="1.2" sword="1.2" axe="1.2" distance="1.1" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	
+	<vocation id="21" name="Bard" description="a bard" gaincap="15" gainhp="5" gainmana="20" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="10" manamultiplier="1.1" attackspeed="800" soulmax="100" gainsoulticks="30" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="22" name="Ascendent Bard" description="an ascendent bard" gaincap="15" gainhp="5" gainmana="20" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="30" manamultiplier="1.1" attackspeed="600" soulmax="100" gainsoulticks="30" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="23" name="Druid" description="a druid" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="15" manamultiplier="1.1" attackspeed="800" soulmax="100" gainsoulticks="30" fromvoc="23">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="24" name="Elder Druid" description="an elder druid" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="30" manamultiplier="1.1" attackspeed="600" soulmax="100" gainsoulticks="30" fromvoc="23">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="25" name="Priest" description="a priest" gaincap="10" gainhp="5" gainmana="20" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="10" manamultiplier="1.1" attackspeed="800" soulmax="100" gainsoulticks="30" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="26" name="High Priest" description="a high priest" gaincap="10" gainhp="5" gainmana="20" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="20" manamultiplier="1.1" attackspeed="600" soulmax="100" gainsoulticks="30" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="27" name="Sorcerer" description="a sorcerer" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="2" gainmanaticks="1" gainmanaamount="15" manamultiplier="1.1" attackspeed="800" soulmax="100" gainsoulticks="30" fromvoc="27">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="28" name="Master Sorcerer" description="a master sorcerer" gaincap="10" gainhp="5" gainmana="30" gainhpticks="1" gainhpamount="5" gainmanaticks="1" gainmanaamount="30" manamultiplier="1.1" attackspeed="600" soulmax="100" gainsoulticks="30" fromvoc="27">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.5" club="2.0" sword="2.0" axe="2.0" distance="2.0" shielding="1.5" fishing="1.1" experience="1.0"/>
+	</vocation>
+	
+	<vocation id="31" name="Berserker" description="a berserker" gaincap="30" gainhp="15" gainmana="0" gainhpticks="1" gainhpamount="7" gainmanaticks="1" gainmanaamount="2" manamultiplier="3.0" attackspeed="400" soulmax="100" gainsoulticks="120" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.4" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="32" name="Monstruous Berserker" description="a monstruous berserker" gaincap="30" gainhp="15" gainmana="0" gainhpticks="1" gainhpamount="15" gainmanaticks="1" gainmanaamount="5" manamultiplier="3.0" attackspeed="200" soulmax="100" gainsoulticks="120" fromvoc="99">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.4" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="33" name="Knight" description="a knight" gaincap="25" gainhp="15" gainmana="5" gainhpticks="1" gainhpamount="7" gainmanaticks="1" gainmanaamount="2" manamultiplier="3.0" attackspeed="600" soulmax="100" gainsoulticks="120" fromvoc="33">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.4" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	<vocation id="34" name="Elite Knight" description="an elite knight" gaincap="25" gainhp="15" gainmana="5" gainhpticks="1" gainhpamount="15" gainmanaticks="1" gainmanaamount="5" manamultiplier="3.0" attackspeed="400" soulmax="100" gainsoulticks="120" fromvoc="33">
+		<formula meleeDamage="1.0" distDamage="1.0" wandDamage="1.0" magDamage="1.0" magHealingDamage="1.0" defense="1.0" magDefense="1.0" armor="1.0"/>
+		<skill fist="1.1" club="1.1" sword="1.1" axe="1.1" distance="1.4" shielding="1.1" fishing="1.1" experience="1.0"/>
+	</vocation>
+	
+</vocations>

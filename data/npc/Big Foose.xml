@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Big Foose" script="data/npc/scripts/parcel_label_letter.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="136" head="96" body="96" legs="85" feet="4" addons="3"/>
+	<parameters>
+        <parameter key="message_greet" value="Hello. How may I help you |PLAYERNAME|? Ask me for a {trade} if you want to buy something. I can also explain the {mail} system." />
+		<parameter key="module_keywords" value="1" />
+		<parameter key="keywords" value="mail;letters;parcels;label" />
+
+		<parameter key="keyword_reply1" value="With our mail system you can send {letters} and {parcels} to other Tibians. I can either explain how {letters} and {parcels} work or sell them to you if you ask me for a {trade}." />
+		<parameter key="keyword_reply2" value="With a letter you can send a message to another Tibian's depot. If you want to send it to 'Ben' in 'Valinor', use the letter - so that a form opens - and write 'Ben' in the first line and 'Valinor' in the second line. Write your message below that." />
+		<parameter key="keyword_reply3" value="In a parcel you can send items to another Tibian's depot. Put your items into the parcel and also place a completed {label} with the name and the city of the receiver inside. Then drag your parcel on one of the blue mailboxes here to send it." />
+		<parameter key="keyword_reply4" value="Including a label in your parcel is important. Imagine you want to send it to 'Ben' in 'Asauchi'. Use the label - so that a form opens - and write 'Ben' in the first line and 'Asauchi' in the second line. Check the spelling and put it in your parcel!" />
+	</parameters>
+</npc>

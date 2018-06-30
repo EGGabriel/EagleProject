@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+	<quest name="Anihilator Quest" startstorageid="7010" startstoragevalue="1">
+		<mission name="Anihilator Quest" storageid="7010" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Voce desafiou os poderosos demons e completou a Anihilator!"/>
+		</mission>
+	</quest>
+	<quest name="Banshee Quest" startstorageid="62465" startstoragevalue="1">
+		<mission name="Banshee Quest" storageid="62465" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Voce de fato se provou ser alque que nao teme o desconhecido, mesmo que sejam banshees!"/>
+		</mission>	
+	</quest>
+	<quest name="Deep Sea Quest" startstorageid="7001" startstoragevalue="1">
+		<mission name="Deep Sea Quest" storageid="7001" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Por se aventurar bravemente embaixo do mar, voce completou a Deep Sea Quest!"/>
+		</mission>
+	</quest>
+	<quest name="Demon Helmet Quest" startstorageid="7021" startstoragevalue="1">
+		<mission name="Demon Helmet Quest" storageid="7021" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Voce completou a Demon Helmet Quest. Premios : Demon Helmet, 10 crystal coins e uma backpack."/>
+		</mission>
+	</quest>
+	<quest name="Dodge Master" startstorageid="48902" startstoragevalue="100">
+		<mission name="Dodge Mastery" storageid="48902" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Voce absorveu 100 dodge stones, atingindo o maximo de dodge!."/>
+		</mission>
+	</quest>
+	<quest name="Dragon Scale Mail Quest" startstorageid="1126" startstoragevalue="1">
+		<mission name="Resistant to Fire" storageid="1126" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Voce ousou entrar na montanha dos dragoes indo ate o subterraneo! Recompensa: Dragon Scale Mail."/>
+		</mission>
+	</quest>
+	<quest name="Pits of Inferno Quest" startstorageid="7092" startstoragevalue="1">
+		<mission name="Pits of Inferno Quest" storageid="7092" startvalue="1" endvalue="1">
+			<missionstate id="1" description="Parabens, voce provou ser extremamente bravo e poderoso, se sobrepondo a incontaveis criaturas, e saindo vitorioso!"/>
+		</mission>
+	</quest>
+		<quest name="Task Dragon" startstorageid="91002" startstoragevalue="Finished">
+		<mission name="Dragon Slayer" storageid="91002" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Dragon. Recompensa Adicional: Acesso ao NPC Enchanted Dragon."/>
+		</mission>
+	</quest>
+	<quest name="Task Demon" startstorageid="91006" startstoragevalue="Finished">
+		<mission name="Demon Slayer" storageid="91006" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Demon."/>
+		</mission>
+	</quest>
+	<quest name="Task Djinn" startstorageid="91001" startstoragevalue="Finished">
+		<mission name="Killing Djinn" storageid="91001" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Djinn."/>
+		</mission>
+	</quest>
+	<quest name="Task Draken" startstorageid="91005" startstoragevalue="Finished">
+		<mission name="Killing Draken" storageid="91005" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Draken."/>
+		</mission>
+	</quest>
+	<quest name="Task Hydra" startstorageid="91004" startstoragevalue="Finished">
+		<mission name="Killing Hydra" storageid="91004" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Hydra."/>
+		</mission>
+	</quest>
+	<quest name="Task Quara" startstorageid="91007" startstoragevalue="Finished">
+		<mission name="Killing Quara" storageid="91007" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Quara."/>
+		</mission>
+	</quest>
+	<quest name="Task Terramite" startstorageid="91003" startstoragevalue="Finished">
+		<mission name="Killing Terramite" storageid="91003" startvalue="Finished" endvalue="Finished">
+			<missionstate id="1" description="Voce completou a task de Terramite."/>
+		</mission>
+	</quest>
+</quests>
